@@ -6,11 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture 8 - Margin, Border, Padding - Width and Height</title>
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+
+        #container {
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+        p {
+      
+            /* Top right bottom left */
+            padding: 5px 10px 20px 40px;
+            border-style: solid;
+            border-color: red darkred red  darkred;
+            border-width: 5px 10px 20px 40px;
+
+            
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+
+        .item {
+            width: 100%;
+        }
+
+        .item img {
+            display: inline-block;
+            background-color: red;
+            margin: 40px;
+            border: 1px solid black;
+        }
+        
+        nav {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            border: 1px solid black;
+        }
+
+        nav a {
+            border: 1px solid black;
+            background-color: rosybrown;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+
+    </style>
 </head>
 <body>
     
-    
+    <div id="container" class="border" >
 
+        <nav>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+            <a href="#">1</a>
+        </nav>
+        <p>
+            Content
+        </p>
+        <div class="item">
+            <a href="#">
+                <img src="https://m.media-amazon.com/images/I/51tMWvj8V7L._AC_UL480_QL65_.jpg" >
+            </a>
+        </div>
+
+
+        
+    </div>
+
+   
 
     <!-- <script src="js/js.js"></script> -->
 </body>
